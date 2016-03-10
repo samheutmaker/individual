@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Image Gallery</title>
+		<script src="bundle.js"></script>
+		<link rel="stylesheet" href="css/styles.min.css"
+		</head>
+		<body data-ng-app="imageGallery">
+			<nav>
+				<ul>
+					<li data-ng-href="#/new">
+						<a data-ng-href="#/new"> New</a>
+					</li>
+					<li data-ng-href="#/images">
+						<a data-ng-href="#/images">Images</a>
+					</li>
+				</ul>
+			</nav>
+		<section ng-view></section>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+<section class="page-container" data-ng-init="getImages()">
+<p data-ng-if="!urls.length">No Images <a href="#/post">Add one.</a></p>
+	<article data-ng-if="urls.length" data-ng-repeat="url in urls">
+		<p> Description: {{url.content}}</p>
+		<img data-ng-src="{{url.url}}" style="height: 400px; width: 400px;">
+	</article>
+</section>
