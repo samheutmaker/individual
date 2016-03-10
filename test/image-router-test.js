@@ -38,7 +38,6 @@ describe('The image router', () => {
     chai.request(BASE_URI)
       .get('/')
       .end((err, res) => {
-        console.log(err);
         expect(err).to.eql(null);
         expect(res.body.length).to.eql(1);
         expect(res.body[0].content).to.eql('Some content');
